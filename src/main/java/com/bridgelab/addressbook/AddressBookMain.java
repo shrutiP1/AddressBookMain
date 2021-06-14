@@ -13,7 +13,6 @@ public class AddressBookMain
     public static void main(String[] args)
     {
         AddressBookMain addressBookMain=new AddressBookMain();
-        System.out.println("Welcome to MasterBranch");
         addressBookMain.menu();
         System.out.println("Welcome to Address Book ");
     }
@@ -29,8 +28,12 @@ public class AddressBookMain
     {
         System.out.println("------AddressBookMenu------>");
         System.out.println("Choose Option");
-        this.getAddressBookName();
         System.out.println("1.Add Contact");
-        addressBookList.get(bookNumber).addContact();
+        if(scan.nextInt()==1)
+        {
+            this.getAddressBookName();
+            addressBookList.get(bookNumber).addContact();
+        }
+
     }
 }
