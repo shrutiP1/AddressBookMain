@@ -12,9 +12,10 @@ public class AddressBookMain
     String name;
     public static void main(String[] args)
     {
+        System.out.println("Welcome to Address Book ");
         AddressBookMain addressBookMain=new AddressBookMain();
         addressBookMain.menu();
-        System.out.println("Welcome to Address Book ");
+
     }
     private void getAddressBookName()
     {
@@ -33,7 +34,7 @@ public class AddressBookMain
         {
             this.getAddressBookName();
             addressBookList.get(bookNumber).addContact();
-
+            System.out.println("Contact Added");
         }
 
     }

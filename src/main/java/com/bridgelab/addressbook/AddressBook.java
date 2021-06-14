@@ -27,19 +27,19 @@ public class AddressBook
     {
         System.out.println("Enter firstName");
         String firstName=input.nextLine();
-        System.out.print("Enter Last Name: ");
+        System.out.println("Enter Last Name: ");
         String lastName = input.nextLine();
-        System.out.print("Enter Address: ");
+        System.out.println("Enter Address: ");
         String address = input.nextLine();
-        System.out.print("Enter City: ");
+        System.out.println("Enter City: ");
         String city = input.nextLine();
-        System.out.print("Enter State: ");
+        System.out.println("Enter State: ");
         String state = input.nextLine();
-        System.out.print("Enter Pin Code: ");
+        System.out.println("Enter Pin Code: ");
         String zip = input.nextLine();
-        System.out.print("Enter Phone Number: ");
+        System.out.println("Enter Phone Number: ");
         String phone = input.nextLine();
-        System.out.print("Enter Email ID: ");
+        System.out.println("Enter Email ID: ");
         String email = input.nextLine();
         contacts.add(new ContactData(firstName,lastName,address,city,state,zip,phone,email));
     }
